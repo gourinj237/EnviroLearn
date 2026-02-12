@@ -66,6 +66,11 @@ button{
     cursor:pointer;
 }
 
+.btnRow{
+    display:flex;            
+    justify-content:flex-end;   
+}
+
 /* Score */
 #scoreBox{
     text-align:right;
@@ -105,7 +110,9 @@ Score: <span id="score">0</span>/10
 <div id="options"></div>
 <div id="feedback"></div>
 
-<button onclick="nextQuestion()">Next</button>
+<div class="btnRow"> 
+    <button onclick="nextQuestion()">Next</button>
+</div> 
 
 </div>
 
