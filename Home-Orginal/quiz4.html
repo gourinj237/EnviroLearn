@@ -8,7 +8,8 @@ body{
     margin:0;
     font-family:'Courier New', Courier, monospace;
     min-height:100vh;
-    background: linear-gradient(120deg, #f6d365, #fda085);
+    background: linear-gradient(120deg,#ff9a9e,#fad0c4);
+
     color:#222;
 }
 
@@ -44,7 +45,7 @@ h1{
 }
 
 .option:hover{
-    background:#fff2cc;
+    background:#fad0c4;
 }
 
 /* Feedback */
@@ -61,9 +62,15 @@ button{
     font-size:16px;
     border:none;
     border-radius:8px;
-    background:#e67e22;
+    background:#ff9a9e;
     color:white;
     cursor:pointer;
+}
+
+
+.btnRow{
+    display:flex;               
+    justify-content:flex-end;    
 }
 
 /* Score */
@@ -106,7 +113,9 @@ Score: <span id="score">0</span>/10
 <div id="options"></div>
 <div id="feedback"></div>
 
-<button onclick="nextQuestion()">Next</button>
+<div class="btnRow"> 
+    <button onclick="nextQuestion()">Next</button>
+</div> 
 
 </div>
 
