@@ -8,7 +8,7 @@ body{
     margin:0;
     font-family:'Courier New', Courier, monospace;
     min-height:100vh;
-    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    background: linear-gradient(120deg,#a8e063,#56ab2f);
     color:#222;
 }
 
@@ -66,6 +66,11 @@ button{
     cursor:pointer;
 }
 
+.btnRow{
+    display:flex;                
+    justify-content:flex-end;    
+}
+
 /* Score */
 #scoreBox{
     text-align:right;
@@ -108,7 +113,9 @@ Score: <span id="score">0</span>/10
 
 <div id="feedback"></div>
 
-<button onclick="nextQuestion()">Next</button>
+<div class="btnRow"> 
+    <button onclick="nextQuestion()">Next</button>
+</div> 
 
 </div>
 
