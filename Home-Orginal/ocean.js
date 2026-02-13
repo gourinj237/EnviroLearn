@@ -17,7 +17,7 @@ const animals = [
 ];
 
 let score=0;
-let time=60;
+let time=30;
 let gameActive=false;
 let spawnInterval;
 let timerInterval;
@@ -32,7 +32,7 @@ document.getElementById("startScreen").classList.add("hidden");
 document.getElementById("gameUI").classList.remove("hidden");
 
 score=0;
-time=60;
+time=30;
 gameActive=true;
 
 document.getElementById("score").textContent=score;
