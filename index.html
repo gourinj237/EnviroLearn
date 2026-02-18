@@ -14,7 +14,7 @@
                     <li><a href="home.html">Home</a></li>
                     <li><a href="games.html">Games</a></li>
                     <li><a href="quizzes.html">Quizzes</a></li>
-                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
                     <li><a href="">Challenges</a></li>
                     
                 </ul>
@@ -39,7 +39,7 @@
                 <h4 class="g2">Learn through Play</h4>
             </div>
 
-            <div class="idiv" onclick="location.href='video.html'">
+            <div class="idiv" onclick="location.href='videos.html'">
                 <img src="videos.png" class="videos" alt="Videos">
                 <h2 class="g3">Videos</h2>
                 <h4 class="g4">Watch,Learn,Protect</h4>
@@ -74,20 +74,4 @@
     <h4></h4>
 </footer>
 
-<script>
-    function scrollToContent() {
-        const arrow = document.getElementById("scrollArrow");
-        const target = document.querySelector(".contsec");
-
-        target.scrollIntoView({
-            behavior: "smooth"
-        });
-
-        /* Hide arrow after scroll */
-        setTimeout(() => {
-            arrow.style.opacity = "0";
-            arrow.style.pointerEvents = "none";
-        }, 800); // matches scroll time
-    }
-</script>
 </body>
