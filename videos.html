@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eco Learning Videos</title>
+    <link rel="stylesheet" href="videostyle.css">
+
+    <style>
+        /* Force proper layout for video cards */
+        .videoGrid{
+            display: grid;
+            grid-template-columns: 320px 320px;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        /* Center the last card */
+        .videoGrid .gameCard:nth-child(3){
+            grid-column: 1 / span 2;
+            justify-self: center;
+        }
+    </style>
+
+</head>
+
+<body class="menuBG">
+
+<h1 class="title">🎬 Eco Learning Videos</h1>
+
+<p class="subtitle">
+Select a topic and learn through videos!
+</p>
+
+<div class="videoGrid">
+
+     <div class="gameCard pollutionCard" onclick="location.href='pollution.html'">
+        🌫 Pollution Video
+    </div>
+
+    <div class="gameCard globalCard" onclick="location.href='globalwarming.html'">
+        🌍 Global Warming Video
+    </div>
+
+    <div class="gameCard bioCard" onclick="location.href='biodiversity.html'">
+        🐼 Biodiversity Video
+    </div>
+
+</div>
+
+</body>
+</html>
