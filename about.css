@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f9f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('about1.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+.about {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about h1 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about p {
+    color: #444;
+    font-size: 30px;
+    line-height: 1.7;
+}

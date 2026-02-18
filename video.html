@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos for Environmental Awareness</title>
+
+  <style>
+    body {
+      background-image: url("main.jpeg");
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+   
+    .overlay {
+      background: rgba(220, 219, 219, 0.5);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+   button a{
+    text-decoration: none;
+    color: white;
+}
+    .video-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap; 
+    }
+
+    .video-card {
+      text-align: center;
+      color: rgb(9, 7, 7);
+    }
+
+    video {
+      border-radius: 10px;
+      border: 3px solid rgb(103, 145, 114);
+    }
+    .quiz-btn-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.quiz-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 36px;         
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #2e7d32; 
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.quiz-btn:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+.quiz-logo {
+  font-size: 30px;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+
+    <div class="video-row">
+
+      <div class="video-card">
+        <h2>POLLUTION</h2>
+        <video controls width="300">
+          <source src="pollution.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-card">
+        <h2>GLOBAL WARMING</h2>
+        <video controls width="300">
+          <source src="global.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-card">
+        <h2>BIODIVERSITY</h2>
+        <video controls width="300">
+          <source src="biodiv.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+  </div>
+
+<div class="quiz-btn-container">
+  <button class="quiz-btn" onclick="window.location.href='quiz.html'">
+    <a href="quiz.html">🌍🎓Take Quiz</a>
+    
+  </button>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="top">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="">EnviroLearn</a></div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="">Challenges</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!---<section class="heroimg">
+         <img src="background.jpg" class="env">   
+    </section>--->
+         
+    <section class="contsec">
+          <div class="contentbg">
+            <h2 class="learn">Learn to Love the Earth</h2>
+         <h3 class="play">Play games,watch videos and complete challenges to become an Eco Hero!</h3>
+         
+         <h2 class="explore">Explore</h2>
+         <div class="gdiv">
+            <div class="hdiv" onclick="location.href='games.html'">
+                <img src="games1.png" class="games" alt="Games">
+                <h2 class="g1">Games</h2>
+                <h4 class="g2">Learn through Play</h4>
+            </div>
+
+            <div class="idiv" onclick="location.href='video.html'">
+                <img src="videos.png" class="videos" alt="Videos">
+                <h2 class="g3">Videos</h2>
+                <h4 class="g4">Watch,Learn,Protect</h4>
+            </div>
+
+            <div class="jdiv" onclick="location.href='quizzes.html'">
+                <img src="quizzes.png" class="quizzes" alt="Quizzes">
+                <h2 class="g6">Quizzes</h2>
+                <h4 class="g7">Test your Knowledge</h4>
+            </div>
+
+            <div class="kdiv" onclick="location.href='challenges.html'">
+                <img src="challenges.png" class="challenges" alt="Challenges">
+                <h2 class="g8">Challenges</h2>
+                <h4 class="g9">Take Action,Make an Impact!</h4>
+            </div>
+
+            <div class="ldiv" onclick="location.href='leader.html'">
+                <img src="leader.png" class="leader" alt="">
+                <h2 class="g10">Leaderboard</h2>
+                <h4 class="g11">Earn Rewards</h4>
+            </div>
+         </div>
+        </div>
+    </section>
+
+<div class="scroll-down" id="scrollArrow" onclick="scrollToContent()">
+    &#8595;
+</div>
+
+<footer>
+    <h4></h4>
+</footer>
+
+<script>
+    function scrollToContent() {
+        const arrow = document.getElementById("scrollArrow");
+        const target = document.querySelector(".contsec");
+
+        target.scrollIntoView({
+            behavior: "smooth"
+        });
+
+        /* Hide arrow after scroll */
+        setTimeout(() => {
+            arrow.style.opacity = "0";
+            arrow.style.pointerEvents = "none";
+        }, 800); // matches scroll time
+    }
+</script>
+</body>
