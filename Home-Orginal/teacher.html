@@ -1,0 +1,156 @@
+                                                                                                                        <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Teacher | EnviroLearn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="login-overlay">
+<div class="login-box">
+
+<h1>EnviroLearn</h1>
+<h3 id="formTitle">Teacher Login</h3>
+
+<!-- LOGIN FORM -->
+<form id="loginForm">
+    <label>Name</label>
+    <input type="text" required>
+
+    <label>User ID</label>
+    <input type="text" required>
+
+    <label>Password</label>
+    <input type="password" required>
+
+    <div class="forgot">
+        <a href="#" onclick="openForgot()">Forgot Password?</a>
+    </div>
+
+    <button class="action-btn"><a href="trreport.html">🔐 Login</a></button>
+</form>
+
+<!-- SIGNUP FORM -->
+<form id="signupForm" style="display:none;">
+    <label>Name</label>
+    <input type="text" required>
+
+    <label>User ID</label>
+    <input type="text" required>
+
+    <label>Password</label>
+    <input type="password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" required>
+
+    <button class="action-btn">📝 Sign Up</button>
+</form>
+
+<p class="account">
+    <span id="toggleText">Not registered?</span>
+    <a href="#" onclick="toggleForm()">Sign Up</a>
+</p>
+
+<p class="account">
+    <a href="role.html">← Back</a>
+</p>
+
+</div>
+</div>
+
+<!-- FORGOT PASSWORD MODAL -->
+<div class="modal" id="forgotModal">
+<div class="modal-box">
+
+    <!-- Close button -->
+    <span class="close" onclick="closeForgot()">&times;</span>
+
+    <h3>Recover Password</h3>
+    <p>Enter your registered email</p>
+
+    <input
+        type="email"
+        id="forgotEmail"
+        placeholder="Enter registered email"
+    >
+
+    <!-- Error message -->
+    <p id="forgotError" class="error-msg"></p>
+
+    <!-- Success message -->
+    <p id="forgotSuccess" class="success-msg">
+        Email sent successfully.
+    </p>
+
+    <button type="button" onclick="sendResetLink()">
+        Send Reset Link
+    </button>
+
+</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+function toggleForm() {
+    const login = document.getElementById("loginForm");
+    const signup = document.getElementById("signupForm");
+    const title = document.getElementById("formTitle");
+    const text = document.getElementById("toggleText");
+
+    if (login.style.display === "none") {
+        login.style.display = "block";
+        signup.style.display = "none";
+        title.innerText = "Teacher Login";
+        text.innerText = "Not registered?";
+    } else {
+        login.style.display = "none";
+        signup.style.display = "block";
+        title.innerText = "Teacher Sign Up";
+        text.innerText = "Already have an account?";
+    }
+}
+
+function openForgot() {
+    document.getElementById("forgotModal").style.display = "flex";
+}
+
+function closeForgot() {
+    document.getElementById("forgotModal").style.display = "none";
+    document.getElementById("forgotEmail").value = "";
+    document.getElementById("forgotError").style.display = "none";
+    document.getElementById("forgotSuccess").style.display = "none";
+}
+
+function sendResetLink() {
+    const email = document.getElementById("forgotEmail").value.trim();
+    const error = document.getElementById("forgotError");
+    const success = document.getElementById("forgotSuccess");
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    error.style.display = "none";
+    success.style.display = "none";
+
+    if (email === "") {
+        error.textContent = "Please enter your email address.";
+        error.style.display = "block";
+        return;
+    }
+
+    if (!emailPattern.test(email)) {
+        error.textContent = "Please enter a valid email address.";
+        error.style.display = "block";
+        return;
+    }
+
+    // Demo success
+    success.style.display = "block";
+}
+</script>
+
+</body>
+</html>
