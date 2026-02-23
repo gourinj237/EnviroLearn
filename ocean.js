@@ -73,7 +73,7 @@ img.onclick=()=>{
 
 ocean.appendChild(img);
 
-// stay longer now
+
 setTimeout(()=>{img.remove()},7000);
 }
 
@@ -98,7 +98,7 @@ document.getElementById("endScreen").classList.remove("hidden");
 document.getElementById("finalScore").textContent=
 "Final Score: "+score;
 
-// Appreciation messages
+
 let message="";
 if(score < 50)
 message="Nice start! Every small action helps the ocean 💙";

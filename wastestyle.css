@@ -1,28 +1,26 @@
-/* Reset + Full Screen Background Fix */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Smooth Eco Background */
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 
     background-image: url("back.png");
-    background-size: cover;        /* fills screen */
-    background-position: center;   /* centers image */
-    background-repeat: no-repeat;  /* no tiling */
-    background-attachment: fixed;  /* smooth scrolling look */
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
 }
 
 
-/* Heading */
+
 h1 {
     margin-top: 20px;
 }
 
-/* Score Box */
+
 #scoreBoard {
     font-size: 26px;
     font-weight: bold;
@@ -34,7 +32,7 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,.15);
 }
 
-/* Item Image */
+
 #wasteItem {
     width: 170px;
     margin: 12px;
@@ -46,14 +44,14 @@ h1 {
     transform: scale(1.12);
 }
 
-/* Feedback Text */
+
 #feedback {
     height: 24px;
     font-weight: bold;
     margin-top: 6px;
 }
 
-/* Bins Layout */
+
 #bins {
     display: flex;
     justify-content: center;
@@ -74,7 +72,7 @@ h1 {
     background: #ecffe9;
 }
 
-/* Final Screen */
+
 .hidden {
     display: none;
 }
@@ -87,7 +85,7 @@ h1 {
     font-size: 32px;
 }
 
-/* Button */
+
 button {
     font-family: 'Courier New', Courier, monospace;
     padding: 12px 25px;

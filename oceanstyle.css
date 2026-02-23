@@ -8,7 +8,7 @@ body{
     background-attachment: fixed;
 }
 
-/* Screens */
+
 .screen{
     position:absolute;
     width:100%;
@@ -32,7 +32,7 @@ body{
     display:none;
 }
 
-/* Topbar */
+
 #topbar{
     position:absolute;
     top:15px;
@@ -47,14 +47,14 @@ body{
     z-index:2;
 }
 
-/* Ocean play area */
+
 #ocean{
     position:absolute;
     width:100%;
     height:100%;
 }
 
-/* Floating objects — BIGGER */
+
 .object{
     position:absolute;
     width:10vw;
@@ -69,7 +69,7 @@ min-width:150px;
     to{ transform:translateY(-20px);}
 }
 
-/* Buttons */
+
 button{
     padding:12px 25px;
     font-size:18px;
