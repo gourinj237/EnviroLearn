@@ -5,7 +5,7 @@
 
 <style>
 
-/* Body style */
+
 body{
     margin:0;
     font-family:'Courier New', Courier, monospace;
@@ -18,17 +18,17 @@ body{
     color:white;
 }
 
-/* Title */
+
 .title{
     font-size:40px;
     text-align:center;
     padding-top:30px;
 }
 
-/* Quiz container */
+
 .quizBox{
     background:white;
-    /*background-image: url(quiz.jpeg);*/
+  
     color:black;
     width:700px;
     margin:40px auto;
@@ -37,7 +37,7 @@ body{
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Timer */
+
 .timer{
     font-size:20px;
     color:red;
@@ -45,14 +45,14 @@ body{
     text-align:right;
 }
 
-/* Question */
+
 .question{
     font-size:22px;
     font-weight:bold;
     margin-bottom:20px;
 }
 
-/* Options */
+
 .option{
     background:#f1f1f1;
     padding:12px;
@@ -65,7 +65,7 @@ body{
     background:#dff5e1;
 }
 
-/* Result box */
+
 .result{
     text-align:center;
     font-size:26px;
@@ -98,7 +98,7 @@ Time Left: <span id="time">30</span>s
 
 <script>
 
-/* Questions (10 marks each) */
+
 var quiz=[
 
 {
@@ -138,7 +138,7 @@ var score=0;
 var timeLeft=30;
 var timer;
 
-/* Timer function */
+
 function startTimer()
 {
 timeLeft=30;
@@ -159,7 +159,7 @@ nextQuestion();
 },1000);
 }
 
-/* Load question */
+
 function loadQuestion()
 {
 clearInterval(timer);
@@ -179,7 +179,7 @@ document.getElementById("options").innerHTML=optionsHTML;
 startTimer();
 }
 
-/* Check answer */
+
 function checkAnswer(selected)
 {
 clearInterval(timer);
@@ -193,7 +193,7 @@ index++;
 nextQuestion();
 }
 
-/* Next question */
+
 function nextQuestion()
 {
 if(index<quiz.length)
@@ -206,7 +206,7 @@ showResult();
 }
 }
 
-/* Show result with emoji */
+
 function showResult()
 {
 var message="";
@@ -247,7 +247,7 @@ You are an Earth Protector! 🌱
 document.getElementById("quizBox").innerHTML=message;
 }
 
-/* Start quiz */
+
 loadQuestion();
 
 </script>

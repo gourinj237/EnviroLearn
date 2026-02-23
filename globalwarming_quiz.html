@@ -190,13 +190,13 @@ options[selected].classList.add("wrong");
 options[quiz[index].answer].classList.add("correct");
 }
 
-/* disable clicking again */
+
 for(var i=0;i<options.length;i++)
 {
 options[i].style.pointerEvents="none";
 }
 
-/* wait 1 second then next question */
+
 setTimeout(function(){
 index++;
 nextQuestion();

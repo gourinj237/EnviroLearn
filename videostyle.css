@@ -5,7 +5,7 @@ body{
     color:#222;
 }
 
-/* Menu */
+
 .menuBG{
     background:
         linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
@@ -38,55 +38,36 @@ body{
     gap:40px;
     padding-bottom:50px;
 }
-/* Pollution background */
+
 .pollutionCard{
     background: white;
     background-size: cover;
     background-position: center;
     transition: background 0.3s ease, transform 0.2s ease;
-    /*linear-gradient(rgba(92, 231, 129, 0.85), rgba(118, 224, 130, 0.85)),
-    url("new1.jpeg");
-
-    background-size:cover;
-    background-position:center;*/
+    
 }
 
-/* Global warming background */
+
 .globalCard{
     background: white;
     background-size: cover;
     background-position: center;
     transition: background 0.3s ease, transform 0.2s ease;
-    /*
-    background:
-    linear-gradient(rgba(83, 207, 135, 0.85), rgba(61, 134, 115, 0.85)),
-    url("new1.jpeg");
-
-    background-size:cover;
-    background-position:center;*/
+   
 }
 
-/* Biodiversity background */
+
 .bioCard{
     background: white;
     background-size: cover;
     background-position: center;
     transition: background 0.3s ease, transform 0.2s ease;
-    /*
-    background:
-    linear-gradient(rgba(88, 186, 86, 0.85), rgba(103, 237, 130, 0.85)),
-    url("new1.jpeg");
-
-    background-size:cover;
-    background-position:center;
-    */
+    
 }
 
 
 .gameCard{
-    /*background:
-        linear-gradient(rgba(76, 161, 71, 0.85), rgba(69, 148, 68, 0.85)),
-        url("new1.jpeg");*/
+   
 
     background-size: cover;
     background-position: center;
@@ -112,7 +93,7 @@ body{
     background:#e8fff1;
 }
 
-/* Quiz Page */
+
 
 .gameContainer{
     max-width:700px;
